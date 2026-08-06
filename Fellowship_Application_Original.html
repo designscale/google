@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Google Fellowship — Original Application</title>
+<link rel="stylesheet" href="Fellowship_style.css">
+<style>
+  :root{
+    --blue:#4285F4;
+    --red:#EA4335;
+    --yellow:#FBBC05;
+    --green:#34A853;
+    --ink:#202124;
+    --ink-soft:#5f6368;
+    --bg:#fafafa;
+    --card:#ffffff;
+    --border:#e8eaed;
+    --radius:12px;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:'Segoe UI', Roboto, -apple-system, BlinkMacSystemFont, sans-serif;
+    background:var(--bg);
+    color:var(--ink);
+    line-height:1.6;
+  }
+  a{color:var(--blue); text-decoration:none;}
+  a:hover{text-decoration:underline;}
+
+  main{
+    max-width:820px;
+    margin:0 auto;
+    padding:40px 24px 100px;
+  }
+
+  .back-link{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    font-size:13.5px;
+    font-weight:600;
+    color:var(--ink-soft);
+    margin-bottom:24px;
+  }
+
+  header.hero{
+    padding-bottom:24px;
+    margin-bottom:32px;
+    border-bottom:1px solid var(--border);
+  }
+  header.hero .eyebrow{
+    display:flex;
+    gap:6px;
+    margin-bottom:14px;
+  }
+  header.hero .dot{width:10px;height:10px;border-radius:50%;}
+  header.hero .label{
+    font-size:12.5px;
+    font-weight:700;
+    letter-spacing:.04em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    margin-bottom:8px;
+  }
+  header.hero h1{
+    font-size:28px;
+    margin:0 0 10px;
+    font-weight:700;
+  }
+  header.hero .meta{
+    font-size:14px;
+    color:var(--ink-soft);
+    margin:0;
+  }
+  header.hero .meta strong{color:var(--ink);}
+
+  .source-note{
+    margin-top:16px;
+    background:#fef7e0;
+    border:1px solid #fbbc05;
+    border-radius:8px;
+    padding:12px 16px;
+    font-size:13.5px;
+    color:#7a5b00;
+  }
+  .source-note a{color:#7a5b00; text-decoration:underline;}
+
+  .qa-block{
+    margin-bottom:30px;
+  }
+  .qa-block .section-label{
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:.04em;
+    text-transform:uppercase;
+    color:var(--blue);
+    margin-bottom:14px;
+    padding-bottom:8px;
+    border-bottom:2px solid #e8f0fe;
+  }
+  .qa-item{
+    margin-bottom:20px;
+  }
+  .qa-item .q{
+    font-size:13.5px;
+    font-weight:600;
+    color:var(--ink-soft);
+    margin-bottom:8px;
+    line-height:1.5;
+  }
+  .qa-item .a{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:10px;
+    padding:16px 18px;
+    font-size:14.5px;
+    white-space:pre-wrap;
+  }
+  .qa-item .a p{margin:0 0 10px;}
+  .qa-item .a p:last-child{margin-bottom:0;}
+  .qa-item .a ul{margin:0; padding-left:20px;}
+  .qa-item .a .wordcount{
+    display:block;
+    margin-top:10px;
+    font-size:12px;
+    color:var(--ink-soft);
+    font-style:italic;
+  }
+
+  .field-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+    gap:10px;
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:10px;
+    padding:16px 18px;
+  }
+  .field-grid .field dt{
+    font-size:11.5px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:.03em;
+    color:var(--ink-soft);
+    margin-bottom:2px;
+  }
+  .field-grid .field dd{margin:0; font-size:14px;}
+
+  .link-list{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:10px;
+    padding:16px 18px;
+    margin:0;
+  }
+  .link-list dt{
+    font-size:12.5px;
+    font-weight:700;
+    color:var(--ink-soft);
+    margin-top:10px;
+  }
+  .link-list dt:first-child{margin-top:0;}
+  .link-list dd{margin:2px 0 0;}
+
+  .confirm-badge{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    font-size:13px;
+    font-weight:600;
+    background:#e6f4ea;
+    color:#137333;
+    padding:6px 12px;
+    border-radius:100px;
+  }
+
+  footer{
+    text-align:center;
+    font-size:12.5px;
+    color:var(--ink-soft);
+    padding:30px 0 10px;
+    border-top:1px solid var(--border);
+    margin-top:20px;
+  }
+</style>
+</head>
+<body>
+
+<div class="layout">
+  <nav class="sidebar">
+    <div class="brand">Christie Shin · FIT</div>
+    <div class="brand-name">Google Fellowship</div>
+    <ul>
+      <li><a class="navlink" href="Fellowship_Master_Plan.html">🏠 Home</a></li>
+      <li><a class="navlink active" href="Fellowship_Application.html">My Application</a></li>
+      <li><a class="navlink" href="Fellowship_CPA.html">What is CPA?</a></li>
+      <li><a class="navlink" href="Fellowship_Intervention.html">The Intervention</a></li>
+      <li><a class="navlink" href="Fellowship_Toolkit.html">Google Toolkit</a></li>
+      <li><a class="navlink" href="Fellowship_Journey.html">Fellowship Journey</a></li>
+      <li><a class="navlink" href="Fellowship_Kickoff.html">Kick-off ✅</a></li>
+      <li><a class="navlink" href="Fellowship_Interview.html">James Pearce Interview</a></li>
+      <li><a class="navlink" href="Fellowship_Session2.html">Session 1 ✅</a></li>
+      <li><a class="navlink" href="Fellowship_Session3.html">Session 2 ✅</a></li>
+      <li><a class="navlink" href="Fellowship_Spark.html">Spark Session ✅</a></li>
+      <li><a class="navlink" href="Fellowship_Institute.html">In-Person Institute</a></li>
+      <li><a class="navlink" href="Fellowship_Data.html">Key Data Points</a></li>
+      <li><a class="navlink" href="Fellowship_Resources.html">Resources</a></li>
+      <li><a class="navlink" href="Fellowship_NextSteps.html">Immediate Next Steps</a></li>
+      <li><a class="navlink" href="Fellowship_Presentation.html">🎤 My Presentation (6 min)</a></li>
+      <li style="margin-top:16px; padding-top:16px; border-top:1px solid var(--border);">
+        <a class="navlink" href="https://app.notion.com/p/Application-37da9c35b7ab809cb2a5c2b0f78a9e42" target="_blank" rel="noopener" style="color:var(--blue); font-weight:700;">🔗 Notion Source ↗</a>
+      </li>
+    </ul>
+  </nav>
+
+<main>
+
+  <a class="back-link" href="Fellowship_Application.html">← Back to My Application</a>
+
+  <header class="hero">
+    <div class="eyebrow">
+      <div class="dot" style="background:var(--blue)"></div>
+      <div class="dot" style="background:var(--red)"></div>
+      <div class="dot" style="background:var(--yellow)"></div>
+      <div class="dot" style="background:var(--green)"></div>
+    </div>
+    <div class="label">Original Submission · Verbatim</div>
+    <h1>Higher Education Faculty AI Fellowship Application</h1>
+    <p class="meta"><strong>Christie Shin</strong> · Professor, Co-Chair of the Creative Technology &amp; Design Curriculum · Fashion Institute of Technology (FIT)</p>
+    <div class="source-note">
+      This page reproduces the application content exactly as drafted in Google Drive, source document: <a href="https://docs.google.com/document/d/1i4FFJSKUntOSR7ufC_wGdNtjBXKT4BGmkcQU8I5fkJI/edit" target="_blank" rel="noopener">"Application Q&amp;A"</a> (in the <em>2026 GfE application–Faculty AI Fellowship</em> Drive folder). Cross-checked against two earlier Word drafts in the same folder (<span style="font-family:monospace;">Application Q&amp;A.docx</span> and <span style="font-family:monospace;">Copy of Application Q&amp;A V2.docx</span>, both dated April 13, 2026) — all three are word-for-word identical, so no content-level revision history could be reconstructed from what's stored in Drive. See note at the bottom of this page.
+    </div>
+    <div class="source-note" style="background:#e8f0fe; border-color:#4285F4; color:#1a56db;">
+      <strong>Single source of truth:</strong> the live application form (may reflect the actual final submitted answers) is on Notion: <a href="https://app.notion.com/p/Application-37da9c35b7ab809cb2a5c2b0f78a9e42" target="_blank" rel="noopener">Notion — Application ↗</a>. Requires Notion sign-in; not independently verified against this page yet.
+    </div>
+  </header>
+
+  <div class="qa-block">
+    <div class="section-label">Applicant Information</div>
+    <dl class="field-grid">
+      <div class="field"><dt>Full Name</dt><dd>Christie Shin</dd></div>
+      <div class="field"><dt>Job Title</dt><dd>Professor</dd></div>
+      <div class="field"><dt>Years of Experience in Education</dt><dd>20</dd></div>
+      <div class="field"><dt>Email</dt><dd>christie shin@fitnyc.edu</dd></div>
+      <div class="field"><dt>Department</dt><dd>Illustration &amp; Interactive Media / Creative Technology &amp; Design</dd></div>
+    </dl>
+  </div>
+
+  <div class="qa-block">
+    <div class="section-label">Job Role</div>
+    <div class="qa-item">
+      <div class="q">Please provide your formal job title and a summary of your current role within the institution. We invite you to expand on the nature of your responsibilities, including your total years of experience within Higher Education and the specific focus of your work — whether it is primarily centered on leadership, academic teaching and learning (if so, what subject area or curriculum), scholarly research, or professional and/or administrative services. (Maximum 150 words)</div>
+      <div class="a">
+        <p><strong>Formal Job Title:</strong> Professor, Co-Chair of the Creative Technology &amp; Design Curriculum</p>
+        <p>I am a Professor and Co-Chair of the Creative Technology &amp; Design curriculum at the Fashion Institute of Technology (FIT). With over 20 years of experience in Higher Education, my role is a strategic blend of academic leadership, curriculum innovation, and classroom instruction. I spearhead the development of our UX/UI and digital product design tracks while teaching specialized courses, including CT380: AI-Assisted Design.</p>
+        <p>My work is primarily centered on academic teaching and learning — specifically evolving design pedagogy to integrate generative AI — and leadership, serving as the Curriculum Committee Chair. Additionally, I am an active AI design researcher and a Founding Member of Figma's Educator Advisory Board. My career is dedicated to bridging the gap between emerging technologies and professional practice, ensuring the next generation of designers is prepared for an AI-driven creative workforce.</p>
+      </div>
+    </div>
+
+    <div class="qa-item">
+      <div class="q">How Did You Hear About the Program? *</div>
+      <div class="a">
+        <p>I learned about the program through a Google for Education email sent to me as a Gemini Certified Faculty member. Additionally, I was personally referred to this fellowship by Thorsten Schaeff (Developer Experience at Google DeepMind), whose recommendation further encouraged me to apply and align my current AI research with this initiative.</p>
+      </div>
+    </div>
+
+    <div class="qa-item">
+      <div class="q">Location *</div>
+      <div class="a"><p>North America (English)</p></div>
+    </div>
+  </div>
+
+  <div class="qa-block">
+    <div class="section-label">Program Commitment</div>
+    <div class="a" style="background:var(--card); border:1px solid var(--border); border-radius:10px; padding:16px 18px;">
+      <span class="confirm-badge">☑ Confirmed</span>
+      <p style="margin-top:10px;">I confirm I have the time and flexibility to commit to the program, including virtual sessions (Wed, June 10; Wed, July 15; Wed, August 5) and the in-person event (Thur, Sept 17–Fri, Sept 18, 2026).</p>
+    </div>
+  </div>
+
+  <div class="qa-block">
+    <div class="section-label">Institution Details</div>
+    <dl class="field-grid">
+      <div class="field"><dt>Address</dt><dd>235 East 40th Street, Unit 11H</dd></div>
+      <div class="field"><dt>City</dt><dd>New York</dd></div>
+      <div class="field"><dt>State/Province</dt><dd>New York</dd></div>
+      <div class="field"><dt>Institution Name</dt><dd>Fashion Institute of Technology</dd></div>
+      <div class="field"><dt>Google Workspace for Education Domain (Optional)</dt><dd>fitnyc.edu</dd></div>
+      <div class="field"><dt>Institution Website</dt><dd><a href="https://www.fitnyc.edu/" target="_blank" rel="noopener">fitnyc.edu</a></dd></div>
+      <div class="field"><dt>Faculty/Staff Profile Link (Optional)</dt><dd><a href="https://www.fitnyc.edu/creative-nexus/faculty/directory/shin-christie" target="_blank" rel="noopener">FIT faculty directory ↗</a></dd></div>
+    </dl>
+  </div>
+
+  <div class="qa-block">
+    <div class="section-label">Type of Organisation</div>
+    <div class="qa-item">
+      <div class="q">We invite you to define the nature of your institution and its primary educational remit. Please specify if your institution is public, private or a specialised research institute, and briefly describe its size or regional significance. (Maximum 100 words)</div>
+      <div class="a">
+        <p>The Fashion Institute of Technology (FIT) is a premier public college of art, design, business, and technology within the State University of New York (SUNY) system. Based in New York City, FIT serves over 8,000 students and is a global leader in professional education for the creative industries. Its primary remit is providing career-focused, industry-integrated learning. FIT holds immense regional significance as a hub for innovation in Manhattan; as a dedicated "Google Campus," the institution is uniquely positioned to bridge the gap between specialized design traditions and modern, AI-driven technological advancement.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="qa-block">
+    <div class="section-label">Advocacy and Community</div>
+    <p style="font-size:13.5px; color:var(--ink-soft); margin-top:0;">We want to understand how you amplify your expertise, whether through peer reviewed research, digital platforms or on stage at conferences.</p>
+    <div class="qa-item">
+      <div class="q">Professional Body of Work Platforms</div>
+      <dl class="link-list">
+        <dt>Institutional Leadership</dt><dd>ExperienceDesign.NYC (FIT) — <a href="https://experiencedesign.nyc/" target="_blank" rel="noopener">experiencedesign.nyc ↗</a></dd>
+        <dt>Professional Networking</dt><dd>LinkedIn — <a href="https://www.linkedin.com/in/christie-shin/" target="_blank" rel="noopener">linkedin.com/in/christie-shin ↗</a></dd>
+        <dt>Professional Portfolio &amp; Studio</dt><dd>Cynda Media Lab — <a href="https://cyndamedia.com/" target="_blank" rel="noopener">cyndamedia.com ↗</a></dd>
+        <dt>AI Education Hub</dt><dd>Creative Intelligence Collective — <a href="https://ci-collective.framer.website/" target="_blank" rel="noopener">ci-collective.framer.website ↗</a></dd>
+        <dt>Global Advocacy</dt><dd>Figma Educator Advisory Board, FoF Education Community Leader — <a href="https://friends.figma.com/education/" target="_blank" rel="noopener">friends.figma.com/education ↗</a></dd>
+        <dt>Academic News &amp; Recognition</dt><dd>FIT Faculty Newsroom — <a href="https://news.fitnyc.edu/tag/christie-shin/" target="_blank" rel="noopener">news.fitnyc.edu ↗</a></dd>
+        <dt>Community &amp; Mentorship</dt><dd>DesignPortfolio.Center — <a href="https://designportfolio.center/" target="_blank" rel="noopener">designportfolio.center ↗</a></dd>
+      </dl>
+    </div>
+  </div>
+
+  <div class="qa-block">
+    <div class="section-label">Speaking &amp; Research History</div>
+    <div class="qa-item">
+      <div class="q">Beyond your online presence, please describe your history of speaking engagements, conference presentations and published research.</div>
+      <div class="a">
+        <p><strong>Conference Presentations &amp; Guest Lectures</strong></p>
+        <p>UAlbany AI Plus Annual Symposium (2026): Presented research on "AI-Assisted Design Workflows," focusing on how generative tools are redefining the transition from conceptual design to functional prototypes.</p>
+        <p>Global Academic Speaking: I have been invited to present my work at prestigious institutions, including the Rhode Island School of Design (RISD), Cornell University, and Pratt Institute, focusing on digital product design and the evolution of UX/UI.</p>
+        <p>Figma Education Leadership: As a Founding Member of the Figma Educator Advisory Board, I regularly present on the future of design education and industry-standard tool adoption to global educator cohorts.</p>
+        <p><strong>Exhibitions &amp; Published Research</strong></p>
+        <p>The Age of CI (2025): Co-curated this exhibition exploring the synergy between human creativity and collective intelligence, establishing a framework for how AI serves as a collaborative partner rather than a replacement for human designers.</p>
+        <p>Creative Intelligence Collective: I lead this digital repository and research platform, which hosts case studies on "Vibe Coding" and AI-native design methodologies.</p>
+        <p>Curriculum Innovation &amp; Institutional Leadership: Launched the AI-Assisted Design Minor at FIT, creating a comprehensive framework for design students to integrate AI into their creative professional practice.</p>
+        <p><strong>Course Development (Living Laboratory Model)</strong></p>
+        <p>CT380: AI-Assisted Design: Serves as a primary research lab where non-technical design students leverage LLMs to manage complex digital production pipelines.</p>
+        <p>CT390: Rapid Prototyping with AI: Explores advanced methodologies for utilizing AI to accelerate design ideation, iterative testing, and functional output through "vibe coding" workflows.</p>
+        <p>Pedagogical Dissemination: Actively scale these institutional learnings through interdisciplinary faculty workshops and industry-facing panels, positioning the department as a leader in AI-integrated design education.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="qa-block">
+    <div class="section-label">Professional Community Involvement</div>
+    <div class="qa-item">
+      <div class="q">Tell us about another professional community, research group or academic circle you are an active part of. How do you contribute to that community's growth, and how do you envision leveraging this fellowship to further that impact?</div>
+      <div class="a">
+        <p>I serve as a leader within the Creative Intelligence Collective, a research hub dedicated to the synergy between AI and design pedagogy. My primary contribution involves pioneering AI-assisted workflows, specifically, AI-driven storytelling and "vibe coding" for digital products, which empower students to bridge the gap between conceptual design and functional execution. Through workshops and published case studies, I provide a strategic roadmap for educators transitioning from traditional instruction to an AI-integrated curriculum.</p>
+        <p>As a key contributor to the SUNY-wide academic circle, I recently presented FIT's "AI-Assisted Design" minor blueprint at the UAlbany AI Plus Annual Symposium. I envision leveraging this fellowship to scale these initiatives into a global, open-source "AI Pedagogy Toolkit." By integrating Google's latest advancements, I aim to transform local institutional success into a reproducible global model, ensuring that advanced, responsible AI literacy is accessible to all students, regardless of their technical background.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="qa-block">
+    <div class="section-label">Share a Link Demonstrating the Use of AI to Inspire Change</div>
+    <div class="qa-item">
+      <div class="q">We are looking for evidence of how you have applied AI across teaching, research, administration and/or policy. Please provide a piece of content that has inspired your peers, challenged students, or provided a roadmap for others to follow.</div>
+      <div class="a">
+        <p><strong>Link:</strong> <a href="https://experiencedesign.nyc/gallery-ai" target="_blank" rel="noopener">experiencedesign.nyc/gallery-ai ↗</a></p>
+      </div>
+    </div>
+
+    <div class="qa-item">
+      <div class="q">Explain how you inspired change (max 500 words) — structured across The Idea, The Action, The Response, The Impact, and Reflection</div>
+      <div class="a">
+        <p><strong>The Idea</strong><br>As Co-Chair of the Creative Technology &amp; Design curriculum at FIT, I identified a growing "Technical Barrier Gap". While my students were brilliant visual storytellers, many were excluded from the high-level digital product space because they lacked traditional computer science backgrounds. When generative AI emerged, I saw an opportunity to redefine the "technical requirement" itself. The problem wasn't that designers couldn't code; it was that the barrier to entry was syntax, not logic. I wanted to move my students away from using AI as a simple "image generator" and toward using it as a sophisticated architectural partner to build functional, logic-driven digital systems.</p>
+        <p><strong>The Action</strong><br>I developed and launched CT380: AI-Assisted Design, a pioneering course designed to test a "logic-first" pedagogy. I integrated a "vibe coding" workflow — using AI-native development environments like Gemini — to allow students to focus on system architecture and user experience rather than manual coding. To ensure this wasn't just an isolated experiment, I spearheaded the development of a formal AI-Assisted Design minor at FIT. This involved creating institutional frameworks for ethical AI usage, defining new assessment rubrics that grade "prompt logic" and "architectural intent," and building a public-facing gallery to document this new frontier of student work.</p>
+        <p><strong>The Response</strong><br>The response from students was a profound shift in professional identity; they stopped identifying as "non-technical" and began seeing themselves as "Creative Technologists". Fear of the command line was replaced by the excitement of building complex, data-driven prototypes. My colleagues and institutional leaders recognized that this wasn't just a new course, but a blueprint for the future of the department. This internal success led to an invitation to share FIT's model at the UAlbany AI Plus Annual Symposium, where peers from across the SUNY system sought to replicate our curriculum to bridge their own institutional AI gaps.</p>
+        <p><strong>The Impact</strong><br>The impact is visible in the Gallery of AI-Assisted Design. Outcomes are measured not just by the visual quality of the work, but by the functionality of the digital products created — many of which were technically impossible for design students to build just two years ago. Furthermore, the successful approval of the AI-Assisted Design minor serves as a permanent institutional change, affecting hundreds of students annually.</p>
+        <p><strong>Reflection</strong><br>Looking back, I learned that AI literacy is less about teaching new "tools" and more about teaching "systemic thinking". If I were to do this differently, I would focus even earlier on cross-departmental collaboration, as AI-assisted design naturally dissolves the silos between design, business, and technology. This process has reinforced my belief that the future of design education belongs to the "orchestrators" — those who can leverage AI to bridge the gap between imagination and execution.</p>
+        <span class="wordcount">442 / 500 words</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="qa-block">
+    <div class="section-label">Staying Current</div>
+    <div class="qa-item">
+      <div class="q">How do you keep up to date on trends in education and technology? (Maximum 150 words)</div>
+      <div class="a">
+        <p>To keep up to date, I maintain a high-frequency feedback loop between the AI startup ecosystem and the classroom. I proactively partner with emerging startups to bring "in-development" tools directly into my FIT courses, ensuring students engage with technology as it is being built.</p>
+        <p>Beyond direct industry engagement, my roles as a Friends of Figma Education Leader and Founding Member of the Figma Educator Advisory Board provide a front-row seat to shifts in professional design workflows. I stay current through technical deep-dives into AI-native development environments like Gemini, following the "vibe coding" evolution via GitHub, TLDR AI, and The Rundown.</p>
+        <p>Conferences like the UAlbany AI Plus Symposium and Google I/O are essential for institutional grounding. This "industry-first" approach allows me to move past theoretical trends and focus on the practical, logic-based orchestration that defines the future of creative technology.</p>
+        <span class="wordcount">139 / 150 words</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="qa-block">
+    <div class="section-label">Your Purpose and Fellowship Vision</div>
+    <div class="qa-item">
+      <div class="q">Why do you want to become a Higher Ed Faculty AI Fellow? * — Written Response (max 200 words)</div>
+      <div class="a">
+        <p><strong>The Challenge: The Obsolescence of Artifact-Based Assessment</strong><br>The central challenge in my role as Co-Chair is the obsolescence of artifact-based assessment, which now complicates how we define Intellectual Property (IP). With AI-native tools enabling instant, high-fidelity output, the "final artifact" is no longer a reliable measure of student mastery. The real work — strategic orchestration, prompt architecture, and critical curation — often remains invisible, yet it defines a student's true "intellectual fingerprint." This raises a key question: how do we validate Human Creative Art Direction within complex workflows? By applying 20th-century rubrics to 21st-century processes, we create gaps in both assessment integrity and the recognition of student-led IP.</p>
+        <p><strong>The Fellowship Vision</strong><br>I hope this fellowship serves as a global laboratory to explore a shift: From Artifact-Based Grading to Cognitive-Process Assessment. I want to redefine "rigor" as the human-in-the-loop logic that transforms AI output into protected, original IP. I aim to leverage the cohort's expertise to help FIT architect a framework that validates Human Creative Art Direction as the core value in the creative process. I want to learn how my global peers are protecting the human "intellectual fingerprint" to ensure our students lead a logic-first creative economy.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="qa-block">
+    <div class="section-label">Institutional Statement of Support</div>
+    <div class="a" style="background:var(--card); border:1px solid var(--border); border-radius:10px; padding:16px 18px;">
+      <p style="margin:0;">To ensure your work as a Higher Education Faculty AI Fellow is supported and sustainable, a Statement of Support is required from a senior leader within the institution — Head of Department, Dean, Chair, Head of Faculty, or Director of Professional Services/Operations. (Letter from Troy, senior institutional leader at FIT.)</p>
+    </div>
+  </div>
+
+  <div class="source-note" style="background:#e8f0fe; border-color:#4285F4; color:#1a56db;">
+    <strong>On "original vs. final":</strong> I checked three files in your Drive — the two Word drafts from April 13, 2026 and the Google Doc you linked — and all three contain identical text. I couldn't reconstruct a distinct earlier/later wording from what's stored in Drive. If your actual final submission (e.g. in the Notion application form) differs — for instance, it should also credit Tahui Lee's referral alongside Thor's — point me to that version (or paste the text) and I'll add a true "Final (as submitted)" comparison alongside this original.
+  </div>
+
+  <footer>
+    Reproduced verbatim from Google Drive · Maintained with Claude (Cowork)
+  </footer>
+
+</main>
+</div>
+</body>
+</html>
