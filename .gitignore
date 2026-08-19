@@ -4,3 +4,11 @@
 *.docx
 *.pptx
 .DS_Store
+
+# Deck source images. Used in the pptx and in Figma, not on the site.
+# Kept out of the public repo: the originals are large and they are
+# promotional assets, not site content.
+deck/assets/
+*.jpg
+*.jpeg
+*.png
